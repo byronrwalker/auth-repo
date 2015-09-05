@@ -1,0 +1,39 @@
+.navbar.navbar-default {
+	background-image: none;
+	background-color: $theme_color;
+	.navbar-collapse {
+		.navbar-nav {
+			li {
+				a {
+					color: $theme_text_color;
+					text-decoration: none;
+					text-shadow: none;
+				}
+				a:hover, a:focus {
+					color: $theme_text_color_active;
+				}
+			}
+			.open {
+				a, a:hover, a:focus, a:active {
+					color: $theme_text_color_alt;
+					background-color: $alt_theme_color_3;
+				}
+				ul {
+					background-color: $alt_theme_color_2;
+					li {
+						background-color: $alt_theme_color_2;
+						a {
+							background-color: $alt_theme_color_2;
+						}
+					}	
+				}
+			}
+		}
+	}
+}
+
+.brand_img {
+	height: 35px;
+	width: auto;
+	margin-top: -7px;
+}

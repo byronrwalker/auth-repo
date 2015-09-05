@@ -1,0 +1,41 @@
+{
+  "name": "matchDwellApp",
+  "version": "0.0.1",
+  "description": "Initial MatchDwell app on a MEAN stack.",
+  "main": "app.js, sass/main.scss",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "Angular",
+    "Express",
+    "Node"
+  ],
+  "authors": [
+    "Nick Norcross"
+  ],
+  "license": "MIT",
+  "homepage": "www.matchdwell.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+		"angular": "~1.4.5",
+	  	"angular-route": "~1.4.0",
+		"angular-resource": "~1.2",
+		"angular-mocks": "~1.2",
+		"angular-cookies": "~1.2",
+		"angular-animate": "~1.2",
+		"angular-touch": "~1.2",
+		"angular-sanitize": "~1.2",
+	  	"animate.css" : "latest",
+	  	"bootstrap": "~3",
+	  	"bootstrap-fileinput": "~4.2.6",
+	  	"components-font-awesome" : "~4.4",
+	  	"font-awesome" : "latest"
+	}
+}

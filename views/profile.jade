@@ -1,0 +1,97 @@
+extends layout
+
+block content
+	.container
+		.row
+			.col-sm-12
+				if (user.name.length > 0)
+					h3=user.name+'\'s Profile and Accounts'
+				else
+					h3 Your Profile and Accounts
+	.container
+		.row
+			.col-sm-6
+				.well
+					h3.text-warning
+						span.fa.fa-user 
+						|&nbsp Local
+					if (user.local.email)	
+						p
+							strong Email:
+							&nbsp;
+							= user.local.email
+							br
+							strong User Id:
+							&nbsp;
+							= user._id
+						a.btn.btn-warning(href='/unlink/local') Unlink
+					else
+						a.btn.btn-warning(href='/connect/local') Connect Local
+						
+			.col-sm-6
+				.well
+					h3.text-primary
+						span.fa.fa-facebook 
+						|&nbsp; Facebook
+					if (user.facebook.token)
+						p
+							strong User Name:
+							&nbsp;
+							= user.facebook.name
+							br
+							strong Email:
+							&nbsp;
+							= user.facebook.email
+						a.btn.btn-primary(href='/unlink/facebook') Unlink
+					else
+						a.btn.btn-primary(href='/connect/facebook') Connect Facebook
+			.clearfix.visible-lg-block
+			.col-sm-6
+				.well
+					h3.text-danger
+						span.fa.fa-google-plus
+						|&nbsp Google+
+					if (user.google.token)
+						p
+							strong User Name:
+							&nbsp;
+							= user.google.name
+							br
+							strong Email:
+							&nbsp;
+							= user.google.email
+						a.btn.btn-danger(href='/unlink/google') Unlink
+					else
+						a.btn.btn-danger(href='/connect/google') Connect Google
+			.col-sm-6
+				.well
+					h3.text-info
+						span.fa.fa-instagram
+						|&nbsp Instagram
+					if (user.instagram.token)
+						p
+							strong Username:
+							&nbsp;
+							= user.instagram.name
+							br
+							img.pull-right(src=user.instagram.profile_pic)
+						br
+						a.btn.btn-info(href='/unlink/instagram') Unlink
+					else
+						a.btn.btn-info(href='/connect/instagram') Connect Instagram
+	.container
+		.row
+			.col-sm-12
+				.well
+					h3
+						span.fa.fa-upload
+						|&nbsp Upload Pictures
+					form(action='/photoUpload', method='post', style='max-width: 600px;')
+						.form-group
+							label.control-label Pictures for Upload
+							input.file(id="input-24", type="file", multiple=true)
+							button.btn.btn-default(type='submit') Upload Now
+							
+						
+
+

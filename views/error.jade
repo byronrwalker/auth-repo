@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	.container
+		.row
+			.col-sm-12
+				.well
+					h1 Uh oh! Something went wrong...
+					h3.text-danger= 'Error: '+message+': '+error.status
+					pre #{error.stack}

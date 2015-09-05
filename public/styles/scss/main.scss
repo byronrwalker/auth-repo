@@ -1,0 +1,21 @@
+/* Site Variables */
+$theme_color:                   #233144;
+$alt_theme_color:               #353535;
+$alt_theme_color_2:             #FFFFFF;
+$alt_theme_color_3:             #DEDEDD;
+$accent_color:                  #D35E33;
+$accent_activated_color:        #B74E2E;
+$theme_text_color:              #FFFFFF;
+$theme_text_color_alt:          #353535;
+$bootstrap_button:              rgb(192,192,192);
+$theme_text_color_active:    	#DEDEDD;
+$page_font:                     'Lato', sans-serif;
+$page_font_weight:              300;
+
+body {
+	font-family: $page_font;
+}
+
+// Imports
+
+@import 'navbar';

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	if (message.length > 0)
+		.container
+			.alert.alert-danger !{message}
+	.container
+		h1 Login to Your Account
+		p.lead Enter your email and password below
+		br
+		form(action='/connect/local', method='post', style='max-width: 600px;')
+			.form-group
+				input.form-control(type='text', name='email', placeholder='Enter Email')
+			.form-group
+				input.form-control(type='password', name='password', placeholder='Enter Password')
+			button.btn.btn-warning(type='submit') Add Local
+			&nbsp;
+			a(href='/profile')
+				button.btn.btn-default(type='button') Go back to profile
+		br
+		h4= info

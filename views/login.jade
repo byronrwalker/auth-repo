@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	if (message.length > 0)
+		.container
+			.alert.alert-danger !{message}
+	.container
+		h1 Login Page
+		p.lead We really like it when people log in
+		br
+		form(role='form', action='/login', method='post', style='max-width: 600px;')
+			.form-group
+				input.form-control(type='text', name='email', placeholder='Enter email')
+			.form-group
+				input.form-control(type='password', name='password', placeholder='Enter password')
+			button.btn.btn-default(type='submit') Submit
+			&nbsp;
+			a(href='/auth/facebook')
+				button.btn.btn-primary(type='button') Facebook
+			&nbsp;	
+			a(href='/auth/google')
+				button.btn.btn-danger(type='button') Google
+			&nbsp;	
+			a(href='/auth/instagram')
+				button.btn.btn-info(type='button') Instagram
+			&nbsp;
+			a(href='/')
+				button.btn.btn-default(type='button') Cancel
+		br
+		h4= info

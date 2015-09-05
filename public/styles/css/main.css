@@ -1,0 +1,27 @@
+/* Site Variables */
+body {
+  font-family: "Lato", sans-serif; }
+
+.navbar.navbar-default {
+  background-image: none;
+  background-color: #233144; }
+  .navbar.navbar-default .navbar-collapse .navbar-nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: none; }
+  .navbar.navbar-default .navbar-collapse .navbar-nav li a:hover, .navbar.navbar-default .navbar-collapse .navbar-nav li a:focus {
+    color: #DEDEDD; }
+  .navbar.navbar-default .navbar-collapse .navbar-nav .open a, .navbar.navbar-default .navbar-collapse .navbar-nav .open a:hover, .navbar.navbar-default .navbar-collapse .navbar-nav .open a:focus, .navbar.navbar-default .navbar-collapse .navbar-nav .open a:active {
+    color: #353535;
+    background-color: #DEDEDD; }
+  .navbar.navbar-default .navbar-collapse .navbar-nav .open ul {
+    background-color: #FFFFFF; }
+    .navbar.navbar-default .navbar-collapse .navbar-nav .open ul li {
+      background-color: #FFFFFF; }
+      .navbar.navbar-default .navbar-collapse .navbar-nav .open ul li a {
+        background-color: #FFFFFF; }
+
+.brand_img {
+  height: 35px;
+  width: auto;
+  margin-top: -7px; }
